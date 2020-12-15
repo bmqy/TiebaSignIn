@@ -3,10 +3,10 @@
 name: Start
 
 on:
-   push:
-   gollum:
+   watch:
+    types: [started]
    schedule:
-       - cron: '30 22 * * *'
+       - cron: '3 22 * * *'
 
 jobs:
   TiebaSignIn:
